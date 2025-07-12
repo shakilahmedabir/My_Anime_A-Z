@@ -1,33 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Anime A-Z</title>
-    <style>
-        body {
-            background-color: antiquewhite;
-        }
-        h1 {
-            text-align: center;
-        }
-        li {
-            text-shadow: 0.05rem 0.05rem cyan;
-        }
-        #arrow {
-            color:blue;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Anime A-Z</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .highlight {
+      color: #ff4081;
+      font-style: italic;
+    }
+
+    #mainTitle {
+      text-align: center;
+      color: #00e5ff;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 2.5rem;
+    }
+
+    .inline-style {
+      font-size: 1.1rem;
+      font-family: Arial;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-    <h1>My Anime A <span id="arrow">→</span> Z</h1>
-    <h3>To update the code at Github</h3>
-    <div>
-        <ul>
-          <li>git add .</li>
-          <li>git commit -m"Some meaningful comment"</li>
-          <li>git push</li>
-        </ul>
-    </div>
+    <p style="color: #39ff14; font-weight: bold;">I love anime because it blends stories, emotions, and stunning art.</p>
+    <h1 id="mainTitle">My Anime A → Z</h1>
+   <div class="intro-section">
+    <h2>About This Project</h2>
+    <p class="inline-style">This site was built as a part of my web development learning journey. I use it to track the anime I’ve watched, what I’m watching, and what’s next.</p>
+<div class="background-wrapper">
+  <div class="background-blur"></div>
+  <div class="content">
+    <h3>Current Favorites</h3>
+    <ul>
+      <li><input type="checkbox"> Demon Slayer</li>
+      <li><input type="checkbox"> Jujutsu Kaisen</li>
+      <li><input type="checkbox"> Attack on Titan</li>
+    </ul>
+  </div>
+</div>
+    <div class="border-card">
+    <h3>Top Genres</h3>
+    <p>Action, Slice of Life, Romance, Fantasy, and Psychological.</p>
+  </div>
+    <div class="display-section">
+    <h4 style="display:inline;">Want Recommendations?</h4>
+    <button style="display:inline-block;">Click Me</button>
+    <p style="display:none;">(This paragraph is hidden using display: none;)</p>
+  </div>
 </body>
 </html>
